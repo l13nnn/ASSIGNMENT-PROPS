@@ -1,13 +1,19 @@
-import { useState } from 'react'
+import React from 'react';
+import ChildButton from './ChildButton.jsx';
 
-function App() {
-  const [count, setCount] = useState(0)
+class App extends React.Component {
+  handleButtonClick = () => {
+    alert('Button clicked in child component!');
+  };
 
-  return (
-    <>
-aaaaaaaaaaaa
-    </>
-  )
+  render() {
+    return (
+      <div>
+        <h1>Passing Functions as Props</h1>
+        <ChildButton onClick={this.handleButtonClick} />
+      </div>
+    );
+  }
 }
 
-export default App
+export default App;
