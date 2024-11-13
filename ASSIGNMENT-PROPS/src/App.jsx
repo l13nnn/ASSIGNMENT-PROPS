@@ -3,9 +3,9 @@ import ProductList from './ProductList.jsx';
 
 function App() {
   const products = [
-    { name: 'Durian', price: 1.0 },
-    { name: 'Orange', price: 2.0 },
-    { name: 'Grape', price: 3.0 },
+    { name: 'Watermelon', inStock: true },
+    { name: 'Mango', inStock: false },
+    { name: 'Pineapple', inStock: true },
   ];
 
   return (
