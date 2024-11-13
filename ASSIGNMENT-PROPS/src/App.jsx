@@ -1,17 +1,17 @@
 import React from 'react';
-import UserCard from './UserCard.jsx';
+import ProductList from './ProductList.jsx';
 
 function App() {
-  const user = {
-    name: 'Irene Djaya',
-    age: 15,
-    email: 'irenedjaya288@gmail.com',
-    online: true,
-  };
+  const products = [
+    { name: 'Durian', price: 1.0 },
+    { name: 'Orange', price: 2.0 },
+    { name: 'Grape', price: 3.0 },
+  ];
 
   return (
     <div>
-      <UserCard {...user} />
+      <h1>Product List</h1>
+      <ProductList products={products} />
     </div>
   );
 }
