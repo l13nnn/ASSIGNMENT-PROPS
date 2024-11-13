@@ -1,19 +1,19 @@
 import React from 'react';
-import ChildButton from './ChildButton.jsx';
+import UserCard from './UserCard.jsx';
 
-class App extends React.Component {
-  handleButtonClick = () => {
-    alert('Button clicked in child component!');
+function App() {
+  const user = {
+    name: 'Irene Djaya',
+    age: 15,
+    email: 'irenedjaya288@gmail.com',
+    online: true,
   };
 
-  render() {
-    return (
-      <div>
-        <h1>Passing Functions as Props</h1>
-        <ChildButton onClick={this.handleButtonClick} />
-      </div>
-    );
-  }
+  return (
+    <div>
+      <UserCard {...user} />
+    </div>
+  );
 }
 
 export default App;
